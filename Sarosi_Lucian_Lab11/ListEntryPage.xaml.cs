@@ -1,3 +1,4 @@
+using Sarosi_Lucian_Lab11.Models;
 namespace Sarosi_Lucian_Lab11;
 
 public partial class NewPage1 : ContentPage

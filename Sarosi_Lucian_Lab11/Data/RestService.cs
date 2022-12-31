@@ -7,8 +7,8 @@ namespace Sarosi_Lucian_Lab11.Data
     public class RestService : IRestService
     {
         HttpClient client;
-        //se va modifica ulterior cu ip-ul si portul corespunzator string RestUrl =
-        //"https://192.169.0.8:45455/api/shoplists/{0}";
+        //se va modifica ulterior cu ip-ul si portul corespunzator
+        string RestUrl = "https://192.169.0.8:45455/api/shoplists/{0}";
         public List<ShopList> Items { get; private set; }
 
         public RestService()
@@ -82,7 +82,7 @@ public async Task DeleteShopListAsync(int id)
     catch (Exception ex) 
     { 
     Console.WriteLine(@"\tERROR {0}", ex.Message); 
-          }
+    }
         }
     } 
 }
